@@ -8,7 +8,7 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(process.env.DATABASE_HOST, { useNewUrlParser: true }),
+    MongooseModule.forRoot('your url database', { useNewUrlParser: true }),
     CustomerModule,
 
   ],
